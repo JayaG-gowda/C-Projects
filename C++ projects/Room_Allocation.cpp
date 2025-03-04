@@ -50,9 +50,9 @@ void main()
 	  cout<<"Enter the available room number to allocate\n";
 	  cin>>rn;
 	   
-	  if(rn<=n && rn>=0)
+	  if(rn<=n && rn>=0)		//checking wheather given room number is there in the present room list
 	  {
-	   if(R[rn-1]==0)
+	   if(R[rn-1]==0)	//check the room is empty or not
 	   {
 	    cout<<"Room is available...!!\nPlease enter your name to allocate room with a conditions.\n1. Space is not allowed (Jayanna_G).\n2. letter should be less than 10 character\n";
 	    cin>>name[rn-1];
