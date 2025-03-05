@@ -11,4 +11,6 @@
 
 <p>⭕ The rooms are allocating to students, if the given room is empty otherwise the student needs to choose another room.<br>⭕ Here there are some conditions (if the room is empty) to allocate.<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Student needs to enter his/here name.<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Characters in a name should be less than 10.<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. While entering a name, space is not allowed, if they want separation then they can use underscore (like Jayanna_G).</p>
 
+<p>⭕. </p>
+
 ![image](https://github.com/user-attachments/assets/4848642f-1b54-45d9-8b28-1f0fddfb08e8)
