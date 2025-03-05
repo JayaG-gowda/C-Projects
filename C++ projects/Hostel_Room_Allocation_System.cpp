@@ -58,7 +58,7 @@ void main()
 	    cout<<"Room is available...!!\nPlease enter your name to allocate room with a conditions.\n1. Space is not allowed (Jayanna_G).\n2. letter should be less than 10 character\n";
 	    cin>>name[rn-1];
 	    R[rn-1]=1;
-	    cout<<"Congratulations room is allocated to "<<name[rn-1]<<endl;
+	    cout<<"Congratulations room"<<rn<<" is allocated to "<<name[rn-1]<<endl;
 	    break;
 	   }
 	   else
