@@ -34,6 +34,7 @@ void main()
  char name[n][10]={NULL};	//name[] holds the occupied persons names
  clrscr();
 
+ cout<<"Welcome to Hostel Room Allocation System..!!\n";
  while(n>0)
  {
   cout<<"\nOptions are\n";
