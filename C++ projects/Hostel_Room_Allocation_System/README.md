@@ -20,3 +20,8 @@
 
 ![image](https://github.com/user-attachments/assets/b93b5a3c-bf3e-46cd-afbc-641be67a2557)
 
+## 📌. List of students and with their room.
+
+<p>⭕ Here we are display the rooms with alloted students.</p>
+
+![image](https://github.com/user-attachments/assets/99f5be98-d07b-43c3-b632-fdf9cfc1f17b)
