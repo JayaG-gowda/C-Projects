@@ -3,38 +3,40 @@
 #include<iostream.h>
 #include<conio.h>
 #include<stdlib.h>
-#define n 5  
+//#define n 5   //this is for constant rooms
 
 int i;
-void display_name(char ch[n][10])	//displaying rooms with occupied persons
+void display_name(char ch[100][10], int nu)	//displaying rooms with occupied persons
 {
  cout<<"The allocated rooms details\n";
  cout<<"  Rooms     Member\n";
- for(i=0;i<n;i++)
+ for(i=0;i<nu;i++)
  {
   cout<<i+1<<". Room"<<i+1<<" = "<<ch[i]<<endl;
  }
 }
 
-void display_room(int r[])		//displaying available rooms only (not already alloted)
+void display_room(int r[], int nu)		//displaying available rooms only (not already alloted)
 {
  cout<<"The avilable rooms are\n";
- for(i=0;i<n;i++)
+ for(i=0;i<nu;i++)
  {
   if(r[i]==0)	//checking wheather given room is alloted or not
   {
    cout<<i+1<<". Room"<<i+1<<endl;
   }
- }  
+ }
 }
 
 void main()
 {
- int rn, op, R[n]={NULL};	//rn means entered choice of room number, R[] holds the rooms number (also it holds, wheather given room is alloted or not)
- char name[n][10]={NULL};	//name[] holds the occupied persons names
+ int rn, op, n, R[100]={NULL};	//rn means entered choice of room number, R[] holds the rooms number (also it holds, wheather given room is alloted or not)
+ char name[100][10]={NULL};	//name[] holds the occupied persons names
  clrscr();
 
  cout<<"Welcome to Hostel Room Allocation System..!!\n";
+ cout<<"Enter the number of room that are there (only for Warden).\n";
+ cin>>n;
  while(n>0)
  {
   cout<<"\nOptions are\n";
@@ -47,10 +49,10 @@ void main()
   switch(op)
   {
    case 1:		//here we check and allocate the room to the customer
-	  display_room(R);
+	  display_room(R,n);
 	  cout<<"Enter the available room number to allocate\n";
 	  cin>>rn;
-	   
+
 	  if(rn<=n && rn>=0)		//checking wheather given room number is there in the present room list
 	  {
 	   if(R[rn-1]==0)	//check the room is empty or not
@@ -63,7 +65,7 @@ void main()
 	   }
 	   else
 	   {
-	    cout<<"Room is already occupied by "<<name[rn-1]<<endl;
+	    cout<<"Room"<<rn<<" is already occupied by "<<name[rn-1]<<endl;
 	    break;
 	   }
 	  }
@@ -74,7 +76,7 @@ void main()
 	  }
 	  break;
 
-   case 2:display_name(name);
+   case 2:display_name(name,n);
 	  break;
 
    case 3: exit(0);
