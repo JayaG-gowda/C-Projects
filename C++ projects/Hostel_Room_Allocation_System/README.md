@@ -1,6 +1,6 @@
 # Hostel Room Allocation System
 
-## Complete project is done by using C++ only.
+## Complete project is made by using C++.
 
 ## 📌. Creation of rooms (by warden).
 <p>⭕ Here hostel warden is going to create the number of rooms that are available in an hostel.<br>⭕ And at the begining all rooms are empty. </p>
